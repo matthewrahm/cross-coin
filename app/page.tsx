@@ -69,8 +69,8 @@ export default function HomePage() {
         {/* Cross Coin Features */}
         <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto justify-items-center px-2 sm:px-0">
           <CloudCard delay={0.3}>
-            <div className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-cross-gold via-white to-cross-gold/80 flex items-center justify-center shadow-[0_8px_20px_rgba(255,215,0,0.4)] group-hover:shadow-[0_12px_28px_rgba(255,215,0,0.6)] transition-all duration-300 mx-auto relative before:absolute before:inset-1 before:bg-gradient-to-br before:from-white/40 before:to-transparent before:rounded-full">
-              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-black flex-shrink-0 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 rounded-full bg-black flex items-center justify-center shadow-[0_8px_20px_rgba(0,0,0,0.4)] group-hover:shadow-[0_12px_28px_rgba(0,0,0,0.6)] transition-all duration-300 mx-auto">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -79,8 +79,8 @@ export default function HomePage() {
           </CloudCard>
           
           <CloudCard delay={0.4}>
-            <div className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-cross-gold via-white to-cross-gold/60 flex items-center justify-center shadow-[0_8px_20px_rgba(255,215,0,0.5)] group-hover:shadow-[0_12px_28px_rgba(255,215,0,0.7)] transition-all duration-300 mx-auto relative before:absolute before:inset-1 before:bg-gradient-to-br before:from-white/40 before:to-transparent before:rounded-full">
-              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-black flex-shrink-0 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 rounded-full bg-black flex items-center justify-center shadow-[0_8px_20px_rgba(0,0,0,0.4)] group-hover:shadow-[0_12px_28px_rgba(0,0,0,0.6)] transition-all duration-300 mx-auto">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 0h10m-10 0a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2M9 12l2 2 4-4" />
               </svg>
             </div>
@@ -89,8 +89,8 @@ export default function HomePage() {
           </CloudCard>
           
           <CloudCard delay={0.5} className="sm:col-span-2 lg:col-span-1">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-cross-gold/80 via-white to-cross-gold/60 flex items-center justify-center shadow-[0_8px_20px_rgba(255,215,0,0.4)] group-hover:shadow-[0_12px_28px_rgba(255,215,0,0.6)] transition-all duration-300 mx-auto relative before:absolute before:inset-1 before:bg-gradient-to-br before:from-white/40 before:to-transparent before:rounded-full">
-              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white flex-shrink-0 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 rounded-full bg-black flex items-center justify-center shadow-[0_8px_20px_rgba(0,0,0,0.4)] group-hover:shadow-[0_12px_28px_rgba(0,0,0,0.6)] transition-all duration-300 mx-auto">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
@@ -108,7 +108,7 @@ export default function HomePage() {
           <a
             href="https://discord.gg/placeholder"
             aria-label="Join the Cross Coin Community on Discord"
-            className="inline-block rounded-pill bg-gradient-to-r from-cross-gold to-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg md:text-xl font-medium text-black shadow-cross hover:shadow-heavenly focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cross-gold transition-all duration-300 hover:scale-[1.02] hover:from-cross-gold/90 hover:to-white/90"
+            className="inline-block rounded-pill bg-black px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg md:text-xl font-medium text-white shadow-cross hover:bg-cross-gold hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cross-gold transition-all duration-300 hover:scale-[1.02]"
           >
             Join the Cross Coin Community
           </a>

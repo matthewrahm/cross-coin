@@ -47,7 +47,7 @@ export function PricePanel({ title = 'Cross Coin Live Price & Market Cap' }: Pri
             }}
             target={hasEmbed ? '_blank' : undefined}
             rel={hasEmbed ? 'noopener noreferrer' : undefined}
-            className="inline-block rounded-pill bg-gradient-to-r from-cross-gold to-white px-8 py-4 text-lg font-medium text-black shadow-cross hover:shadow-heavenly focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cross-gold transition-all duration-300 hover:scale-[1.02]"
+            className="inline-block rounded-pill bg-black px-8 py-4 text-lg font-medium text-white shadow-cross hover:bg-cross-gold hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cross-gold transition-all duration-300 hover:scale-[1.02]"
           >
             View Cross Coin on Dexscreener
           </a>
@@ -73,7 +73,7 @@ function MetricCard({ label, value, icon }: { label: string; value: string; icon
   return (
     <div className="rounded-2xl bg-white/70 backdrop-blur-sm p-6 shadow-soft border border-cross-sky/20">
       <div className="flex items-center gap-4">
-        <div className="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-r from-cross-gold to-white text-black text-xl font-bold shadow-cross">
+        <div className="grid h-12 w-12 place-items-center rounded-full bg-black text-white text-xl font-bold shadow-cross">
           {icon}
         </div>
         <div>
