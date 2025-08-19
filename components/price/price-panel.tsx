@@ -29,7 +29,7 @@ export function PricePanel({ title = 'Cross Coin Live Price & Market Cap' }: Pri
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
           <MetricCard label="Price (USD)" value="—" icon="$" />
-          <MetricCard label="Market Cap" value="—" icon="✝️" />
+          <MetricCard label="Market Cap" value="—" icon="◎" />
         </div>
 
         <div className="mt-6 grid gap-4 sm:grid-cols-3">

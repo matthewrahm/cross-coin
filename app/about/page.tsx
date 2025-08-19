@@ -43,17 +43,6 @@ export default function AboutPage() {
         >
           Built on the foundation of Christian values and community spirit.
         </motion.p>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.25, duration: 0.5 }}
-          className="mt-8"
-        >
-          <p className="text-lg sm:text-xl text-cross-cross/80">
-            Believers in the Cross Coin community: <span className="font-bold text-cross-gold">{members}</span>
-          </p>
-        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 8 }}
