@@ -31,7 +31,13 @@ export const metadata: Metadata = {
     images: ['/api/og'],
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/cross-coin-logo.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/cross-coin-logo.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
 }
 
