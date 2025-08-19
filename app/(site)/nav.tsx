@@ -13,6 +13,7 @@ export function Nav() {
       <div className="flex gap-6 text-sm">
         <Link href="/about" className="text-black/80 hover:text-black underline-offset-4 hover:underline transition-colors">About</Link>
         <Link href="/community" className="text-black/80 hover:text-black underline-offset-4 hover:underline transition-colors">Community</Link>
+        <a href="https://x.com/i/communities/1957861014999081048" target="_blank" rel="noopener noreferrer" className="text-black/80 hover:text-black underline-offset-4 hover:underline transition-colors">Join X Community</a>
       </div>
     </nav>
   )

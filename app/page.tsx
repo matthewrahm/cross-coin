@@ -106,8 +106,8 @@ export default function HomePage() {
           className="mt-8 sm:mt-10"
         >
           <a
-            href="https://discord.gg/placeholder"
-            aria-label="Join the Cross Coin Community on Discord"
+            href="https://x.com/i/communities/1957861014999081048"
+            aria-label="Join the Cross Coin Community on X"
             className="inline-block rounded-pill bg-black px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg md:text-xl font-medium text-white shadow-cross hover:bg-cross-gold hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cross-gold transition-all duration-300 hover:scale-[1.02]"
           >
             Join the Cross Coin Community
