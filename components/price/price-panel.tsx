@@ -23,7 +23,7 @@ export function PricePanel({ title = 'Cross Coin Live Price & Market Cap' }: Pri
         className="mx-auto w-full max-w-[1400px] rounded-3xl bg-white/80 backdrop-blur-sm shadow-heavenly p-6 sm:p-12 border-2 border-dashed border-cross-sky/30"
       >
         <header className="text-center">
-          <h2 className="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-cross-cross via-cross-gold to-cross-sky bg-clip-text text-transparent">{title}</h2>
+          <h2 className="text-3xl sm:text-5xl font-bold text-black">{title}</h2>
           <div className="mx-auto mt-3 h-1 w-24 rounded-full bg-gradient-to-r from-cross-gold to-cross-sky" />
         </header>
 
@@ -77,8 +77,8 @@ function MetricCard({ label, value, icon }: { label: string; value: string; icon
           {icon}
         </div>
         <div>
-          <p className="text-sm text-cross-cross/60 uppercase tracking-wide">{label}</p>
-          <p className="text-2xl sm:text-3xl font-bold mt-1 text-cross-cross">{value}</p>
+          <p className="text-sm text-black/60 uppercase tracking-wide">{label}</p>
+          <p className="text-2xl sm:text-3xl font-bold mt-1 text-black">{value}</p>
         </div>
       </div>
     </div>
@@ -88,8 +88,8 @@ function MetricCard({ label, value, icon }: { label: string; value: string; icon
 function Pill({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-pill bg-white/70 backdrop-blur-sm px-5 py-3 shadow-soft text-center border border-cross-sky/20">
-      <span className="text-cross-cross/60 text-sm mr-2">{label}</span>
-      <span className="font-semibold text-cross-cross">{value}</span>
+      <span className="text-black/60 text-sm mr-2">{label}</span>
+      <span className="font-semibold text-black">{value}</span>
     </div>
   )
 }

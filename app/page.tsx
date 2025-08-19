@@ -24,7 +24,7 @@ export default function HomePage() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight bg-gradient-to-r from-cross-cross via-cross-gold to-cross-sky bg-clip-text text-transparent px-2"
+          className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-black px-2"
         >
           Cross Coin
         </motion.h1>
@@ -33,7 +33,7 @@ export default function HomePage() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15, duration: 0.6, ease: 'easeOut' }}
-          className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl text-cross-cross/80 px-4 sm:px-0"
+          className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl text-black px-4 sm:px-0"
         >
           A heavenly token of faith, community, and divine purpose.
         </motion.p>
@@ -59,9 +59,9 @@ export default function HomePage() {
             <div className="absolute -bottom-2 right-1/4 w-6 h-6 bg-white/85 rounded-full blur-[1px]"></div>
             
             {contractAddress ? (
-              <code className="font-mono select-all text-cross-cross relative z-10">{contractAddress}</code>
+              <code className="font-mono select-all text-black relative z-10">{contractAddress}</code>
             ) : (
-              <span className="text-cross-cross/60 relative z-10">Cross Coin Contract Address (Coming Soon)</span>
+              <span className="text-black/80 relative z-10">Cross Coin Contract Address (Coming Soon)</span>
             )}
           </div>
         </motion.div>
@@ -74,18 +74,18 @@ export default function HomePage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 className="font-semibold text-cross-cross mb-2 text-base sm:text-lg">Faith-Based</h3>
-            <p className="text-cross-cross/70 text-xs sm:text-sm leading-relaxed">Built on the foundation of Christian values and community spirit</p>
+            <h3 className="font-semibold text-black mb-2 text-base sm:text-lg">Faith-Based</h3>
+            <p className="text-black/80 text-xs sm:text-sm leading-relaxed">Built on the foundation of Christian values and community spirit</p>
           </CloudCard>
           
           <CloudCard delay={0.4}>
             <div className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-cross-sky via-cross-heavenly to-white/50 flex items-center justify-center shadow-[0_8px_20px_rgba(135,206,235,0.5)] group-hover:shadow-[0_12px_28px_rgba(135,206,235,0.7)] transition-all duration-300 mx-auto">
-              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-cross-cross flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-black flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 0h10m-10 0a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2M9 12l2 2 4-4" />
               </svg>
             </div>
-            <h3 className="font-semibold text-cross-cross mb-2 text-base sm:text-lg">Heavenly Purpose</h3>
-            <p className="text-cross-cross/70 text-xs sm:text-sm leading-relaxed">A token that represents divine guidance and spiritual growth</p>
+            <h3 className="font-semibold text-black mb-2 text-base sm:text-lg">Heavenly Purpose</h3>
+            <p className="text-black/80 text-xs sm:text-sm leading-relaxed">A token that represents divine guidance and spiritual growth</p>
           </CloudCard>
           
           <CloudCard delay={0.5} className="sm:col-span-2 lg:col-span-1">
@@ -94,8 +94,8 @@ export default function HomePage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
-            <h3 className="font-semibold text-cross-cross mb-2 text-base sm:text-lg">Community</h3>
-            <p className="text-cross-cross/70 text-xs sm:text-sm leading-relaxed">Uniting believers in a shared mission of faith and fellowship</p>
+            <h3 className="font-semibold text-black mb-2 text-base sm:text-lg">Community</h3>
+            <p className="text-black/80 text-xs sm:text-sm leading-relaxed">Uniting believers in a shared mission of faith and fellowship</p>
           </CloudCard>
         </div>
 
@@ -118,7 +118,7 @@ export default function HomePage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="mt-6 sm:mt-8 text-cross-cross/60 text-xs sm:text-sm max-w-2xl mx-auto px-4 sm:px-0"
+          className="mt-6 sm:mt-8 text-black/80 text-xs sm:text-sm max-w-2xl mx-auto px-4 sm:px-0"
         >
           Cross Coin represents more than just a cryptocurrency—it's a symbol of faith, 
           hope, and the power of community united under divine purpose.

@@ -29,7 +29,7 @@ export default function CommunityPage() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight bg-gradient-to-r from-cross-cross via-cross-gold to-cross-sky bg-clip-text text-transparent"
+          className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight text-black"
         >
           Faith in motion.
         </motion.h2>
@@ -37,7 +37,7 @@ export default function CommunityPage() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15, duration: 0.6, ease: 'easeOut' }}
-          className="mt-4 text-lg sm:text-xl text-cross-cross/80 max-w-md mx-auto leading-relaxed"
+          className="mt-4 text-lg sm:text-xl text-black/80 max-w-md mx-auto leading-relaxed"
         >
           As more believers join our Cross Coin community, we grow stronger in faith and purpose together.
         </motion.p>
@@ -51,7 +51,7 @@ export default function CommunityPage() {
               transition={{ delay: i * 0.1, duration: 0.5 }}
               className="rounded-3xl bg-white/80 backdrop-blur-sm p-8 shadow-heavenly border border-cross-sky/20"
             >
-              <p className="text-cross-cross text-xl sm:text-2xl leading-relaxed">{text}</p>
+              <p className="text-black text-xl sm:text-2xl leading-relaxed">{text}</p>
             </motion.article>
           ))}
         </div>

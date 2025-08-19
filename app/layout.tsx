@@ -1,10 +1,21 @@
 import './globals.css'
 import type { Metadata, Viewport } from 'next'
-import { Fredoka } from 'next/font/google'
+import { Playfair_Display, Crimson_Text } from 'next/font/google'
 import { Nav } from './(site)/nav'
 import { GA } from './components/analytics'
 
-const fredoka = Fredoka({ subsets: ['latin'] })
+const playfair = Playfair_Display({ 
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
+
+const crimson = Crimson_Text({ 
+  subsets: ['latin'],
+  variable: '--font-crimson',
+  weight: ['400', '600', '700'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://cross-coin.example'),
@@ -48,7 +59,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full">
-      <body className={`${fredoka.className} h-full antialiased flex flex-col min-h-screen`}>
+      <body className={`${playfair.className} ${crimson.className} h-full antialiased flex flex-col min-h-screen`}>
         <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:m-4 focus:px-4 focus:py-2 focus:bg-white focus:shadow-soft rounded-pill">Skip to content</a>
         <Nav />
         <div id="content" className="flex-1">{children}</div>
