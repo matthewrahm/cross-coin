@@ -47,13 +47,21 @@ export default function HomePage() {
           <div
             role="note"
             aria-label="Token contract address"
-            className="mx-auto max-w-xl bg-white/90 px-4 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm text-cross-cross shadow-[0_8px_32px_rgba(255,255,255,0.6),0_4px_16px_rgba(135,206,235,0.4)] backdrop-blur-md relative overflow-hidden"
-            style={{borderRadius: '40px 60px 50px 70px / 30px 40px 60px 45px'}}
+            className="mx-auto max-w-xl bg-white/95 px-4 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm text-cross-cross shadow-[0_8px_32px_rgba(255,255,255,0.6),0_4px_16px_rgba(135,206,235,0.4)] backdrop-blur-md relative overflow-visible"
+            style={{borderRadius: '50px 70px 60px 80px / 40px 50px 70px 60px'}}
           >
+            {/* Cloud protrusions around the container */}
+            <div className="absolute -top-2 left-1/4 w-8 h-8 bg-white/90 rounded-full blur-[1px]"></div>
+            <div className="absolute -top-1 right-1/3 w-6 h-6 bg-white/85 rounded-full blur-[1px]"></div>
+            <div className="absolute -left-2 top-1/3 w-9 h-9 bg-white/90 rounded-full blur-[1px]"></div>
+            <div className="absolute -right-2 top-2/3 w-7 h-7 bg-white/85 rounded-full blur-[1px]"></div>
+            <div className="absolute -bottom-1 left-1/3 w-8 h-8 bg-white/90 rounded-full blur-[1px]"></div>
+            <div className="absolute -bottom-2 right-1/4 w-6 h-6 bg-white/85 rounded-full blur-[1px]"></div>
+            
             {contractAddress ? (
-              <code className="font-mono select-all text-cross-cross">{contractAddress}</code>
+              <code className="font-mono select-all text-cross-cross relative z-10">{contractAddress}</code>
             ) : (
-              <span className="text-cross-cross/60">Cross Coin Contract Address (Coming Soon)</span>
+              <span className="text-cross-cross/60 relative z-10">Cross Coin Contract Address (Coming Soon)</span>
             )}
           </div>
         </motion.div>
