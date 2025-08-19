@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from 'framer-motion'
+import { CrossCoinLogo } from '@/components/ui/cross-coin-logo'
 
 const MEMBERS_SEED = 4321
 
@@ -9,51 +10,65 @@ export default function AboutPage() {
   const members = formatter.format(0)
 
   return (
-    <main className="min-h-screen p-6 grid grid-rows-[1fr_auto]">
-      <section className="text-center max-w-3xl mx-auto self-center">
+    <main className="min-h-screen p-6 grid grid-rows-[1fr_auto] bg-gradient-to-br from-cross-light via-cross-heavenly to-cross-sky">
+      <section className="text-center max-w-4xl mx-auto self-center">
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15, duration: 0.5 }}
           className="mb-8"
         >
-          <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
-            Community strength
+          <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight bg-gradient-to-r from-cross-cross via-cross-gold to-cross-sky bg-clip-text text-transparent">
+            Faith & Community
           </h2>
-          <p className="mt-6 text-lg sm:text-xl text-neutral-600 leading-relaxed max-w-md mx-auto">
-            Every $100k increase in market cap, the site will subtly evolve to reflect the growing strength of the community.
+          <p className="mt-6 text-lg sm:text-xl text-cross-cross/80 leading-relaxed max-w-md mx-auto">
+            Cross Coin represents the strength of believers united in faith, growing together in spiritual purpose and divine guidance.
           </p>
         </motion.div>
-        <motion.svg
-          aria-hidden="true"
-          width="180"
-          height="180"
-          viewBox="0 0 200 200"
-          xmlns="http://www.w3.org/2000/svg"
-          className="mx-auto my-8"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+        
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.15, duration: 0.6 }}
+          className="mx-auto my-8"
         >
-          <path fill="#fde2e4" d="M36,-61.5C48.6,-51.9,62.9,-45.8,69.7,-35.3C76.6,-24.8,76,-9.9,72.5,4.3C69,18.5,62.7,31.9,53.5,42.1C44.3,52.4,32.2,59.4,19.3,65.6C6.4,71.8,-7.4,77.1,-21.6,77.8C-35.8,78.5,-50.5,74.7,-60.8,64.7C-71.1,54.7,-77,38.6,-79.7,22.3C-82.4,6.1,-81.9,-10.2,-77.1,-25.2C-72.3,-40.1,-63.3,-53.7,-50.4,-63.3C-37.5,-72.9,-18.7,-78.5,-4.1,-72.9C10.6,-67.3,21.2,-50.7,36,-61.5Z" transform="translate(100 100)" />
-        </motion.svg>
+          <CrossCoinLogo size="lg" />
+        </motion.div>
+        
         <motion.p
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-xl sm:text-2xl text-neutral-700"
+          className="text-xl sm:text-2xl text-cross-cross/90"
         >
-          There’s no roadmap. No utility. No promises. Just people.
+          Built on the foundation of Christian values and community spirit.
         </motion.p>
+        
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.25, duration: 0.5 }}
-          className="mt-2"
+          className="mt-8"
         >
-          <p className="text-lg sm:text-xl">
-            Members who believe in the community: <span className="font-bold">{members}</span>
+          <p className="text-lg sm:text-xl text-cross-cross/80">
+            Believers in the Cross Coin community: <span className="font-bold text-cross-gold">{members}</span>
           </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto"
+        >
+          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-cross-gold/20 shadow-cross">
+            <h3 className="font-semibold text-cross-cross mb-3 text-lg">Our Mission</h3>
+            <p className="text-cross-cross/70">To unite believers in a shared mission of faith, hope, and divine purpose through the power of community and technology.</p>
+          </div>
+          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-cross-sky/20 shadow-heavenly">
+            <h3 className="font-semibold text-cross-cross mb-3 text-lg">Our Values</h3>
+            <p className="text-cross-cross/70">Faith, integrity, community, service, and the belief that together we can create something greater than ourselves.</p>
+          </div>
         </motion.div>
       </section>
     </main>

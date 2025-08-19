@@ -7,27 +7,27 @@ import { GA } from './components/analytics'
 const fredoka = Fredoka({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://just-a-community.example'),
-  title: 'Just a Community — The Value Is Us',
-  description: 'No roadmap. No utility. No promises. Just a community that shows up.',
+  metadataBase: new URL('https://cross-coin.example'),
+  title: 'Cross Coin — A Heavenly Token of Faith & Community',
+  description: 'Cross Coin represents more than just a cryptocurrency—it\'s a symbol of faith, hope, and the power of community united under divine purpose.',
   openGraph: {
-    title: 'Just a Community — The Value Is Us',
-    description: 'No roadmap. No utility. No promises. Just a community that shows up.',
+    title: 'Cross Coin — A Heavenly Token of Faith & Community',
+    description: 'Cross Coin represents more than just a cryptocurrency—it\'s a symbol of faith, hope, and the power of community united under divine purpose.',
     type: 'website',
-    url: 'https://just-a-community.example',
+    url: 'https://cross-coin.example',
     images: [
       {
         url: '/api/og',
         width: 1200,
         height: 630,
-        alt: 'Just a Community',
+        alt: 'Cross Coin - Heavenly Token',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Just a Community — The Value Is Us',
-    description: 'No roadmap. No utility. No promises. Just a community that shows up.',
+    title: 'Cross Coin — A Heavenly Token of Faith & Community',
+    description: 'Cross Coin represents more than just a cryptocurrency—it\'s a symbol of faith, hope, and the power of community united under divine purpose.',
     images: ['/api/og'],
   },
   icons: {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#faf8f4',
+  themeColor: '#87CEEB',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

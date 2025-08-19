@@ -4,6 +4,11 @@
 
 :root {
   --background: #faf8f4;
+  --cross-gold: #FFD700;
+  --cross-sky: #87CEEB;
+  --cross-heavenly: #E6F3FF;
+  --cross-cross: #2C3E50;
+  --cross-light: #F8FAFC;
 }
 
 html, body, #__next {
@@ -11,8 +16,19 @@ html, body, #__next {
 }
 
 body {
-  background: var(--background);
-  color: #222;
+  background: linear-gradient(135deg, var(--cross-light) 0%, var(--cross-heavenly) 50%, var(--cross-sky) 100%);
+  color: var(--cross-cross);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Cross coin specific animations */
+@keyframes heavenly-glow {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.heavenly-glow {
+  animation: heavenly-glow 3s ease-in-out infinite;
 }
 
 /* Reduce motion for users who prefer it */
