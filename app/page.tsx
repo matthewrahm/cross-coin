@@ -46,7 +46,7 @@ export default function HomePage() {
           <div
             role="note"
             aria-label="Token contract address"
-            className="mx-auto max-w-xl rounded-pill border-2 border-cross-gold/30 bg-white/80 px-4 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm text-cross-cross shadow-cross backdrop-blur-sm"
+            className="mx-auto max-w-xl rounded-[2rem] border-2 border-white/40 bg-white/90 px-4 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm text-cross-cross shadow-[0_8px_32px_rgba(255,255,255,0.4),0_4px_16px_rgba(135,206,235,0.3)] backdrop-blur-md relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/20 before:via-transparent before:to-cross-sky/10 before:rounded-[2rem]"
           >
             {contractAddress ? (
               <code className="font-mono select-all text-cross-cross">{contractAddress}</code>
@@ -63,34 +63,34 @@ export default function HomePage() {
           transition={{ delay: 0.3, duration: 0.5, ease: 'easeOut' }}
           className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto justify-items-center px-2 sm:px-0"
         >
-          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-cross-sky/20 shadow-heavenly hover:shadow-cross transition-all duration-300 hover:scale-[1.02] group w-full max-w-sm">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 rounded-xl bg-gradient-to-br from-cross-gold to-cross-sky/80 flex items-center justify-center shadow-cross group-hover:shadow-heavenly transition-all duration-300 mx-auto">
-              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-white/85 backdrop-blur-md rounded-[2.5rem] p-4 sm:p-6 border-2 border-white/50 shadow-[0_12px_40px_rgba(255,255,255,0.6),0_8px_24px_rgba(135,206,235,0.4)] hover:shadow-[0_16px_48px_rgba(255,255,255,0.8),0_12px_32px_rgba(255,215,0,0.3)] transition-all duration-500 hover:scale-[1.03] hover:-translate-y-1 group w-full max-w-sm relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/30 before:via-transparent before:to-cross-sky/15 before:rounded-[2.5rem] after:absolute after:top-2 after:left-4 after:w-8 after:h-4 after:bg-white/60 after:rounded-full after:blur-sm">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-cross-gold via-cross-sky/80 to-white/40 flex items-center justify-center shadow-[0_8px_20px_rgba(255,215,0,0.4)] group-hover:shadow-[0_12px_28px_rgba(255,215,0,0.6)] transition-all duration-300 mx-auto relative before:absolute before:inset-1 before:bg-gradient-to-br before:from-white/40 before:to-transparent before:rounded-full">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white flex-shrink-0 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 className="font-semibold text-cross-cross mb-2 text-base sm:text-lg">Faith-Based</h3>
-            <p className="text-cross-cross/70 text-xs sm:text-sm leading-relaxed">Built on the foundation of Christian values and community spirit</p>
+            <h3 className="font-semibold text-cross-cross mb-2 text-base sm:text-lg relative z-10">Faith-Based</h3>
+            <p className="text-cross-cross/70 text-xs sm:text-sm leading-relaxed relative z-10">Built on the foundation of Christian values and community spirit</p>
           </div>
           
-          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-cross-gold/20 shadow-cross hover:shadow-heavenly transition-all duration-300 hover:scale-[1.02] group w-full max-w-sm">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 rounded-xl bg-gradient-to-br from-cross-sky to-cross-heavenly flex items-center justify-center shadow-heavenly group-hover:shadow-cross transition-all duration-300 mx-auto">
-              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-cross-cross flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-white/85 backdrop-blur-md rounded-[2.5rem] p-4 sm:p-6 border-2 border-white/50 shadow-[0_12px_40px_rgba(255,255,255,0.6),0_8px_24px_rgba(135,206,235,0.4)] hover:shadow-[0_16px_48px_rgba(255,255,255,0.8),0_12px_32px_rgba(135,206,235,0.4)] transition-all duration-500 hover:scale-[1.03] hover:-translate-y-1 group w-full max-w-sm relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/30 before:via-transparent before:to-cross-heavenly/20 before:rounded-[2.5rem] after:absolute after:top-3 after:right-3 after:w-6 after:h-3 after:bg-white/50 after:rounded-full after:blur-sm">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-cross-sky via-cross-heavenly to-white/50 flex items-center justify-center shadow-[0_8px_20px_rgba(135,206,235,0.5)] group-hover:shadow-[0_12px_28px_rgba(135,206,235,0.7)] transition-all duration-300 mx-auto relative before:absolute before:inset-1 before:bg-gradient-to-br before:from-white/40 before:to-transparent before:rounded-full">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-cross-cross flex-shrink-0 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 0h10m-10 0a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2M9 12l2 2 4-4" />
               </svg>
             </div>
-            <h3 className="font-semibold text-cross-cross mb-2 text-base sm:text-lg">Heavenly Purpose</h3>
-            <p className="text-cross-cross/70 text-xs sm:text-sm leading-relaxed">A token that represents divine guidance and spiritual growth</p>
+            <h3 className="font-semibold text-cross-cross mb-2 text-base sm:text-lg relative z-10">Heavenly Purpose</h3>
+            <p className="text-cross-cross/70 text-xs sm:text-sm leading-relaxed relative z-10">A token that represents divine guidance and spiritual growth</p>
           </div>
           
-          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-cross-sky/20 shadow-heavenly hover:shadow-cross transition-all duration-300 hover:scale-[1.02] group w-full max-w-sm sm:col-span-2 lg:col-span-1">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 rounded-xl bg-gradient-to-br from-cross-gold/80 to-cross-sky flex items-center justify-center shadow-cross group-hover:shadow-heavenly transition-all duration-300 mx-auto">
-              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-white/85 backdrop-blur-md rounded-[2.5rem] p-4 sm:p-6 border-2 border-white/50 shadow-[0_12px_40px_rgba(255,255,255,0.6),0_8px_24px_rgba(135,206,235,0.4)] hover:shadow-[0_16px_48px_rgba(255,255,255,0.8),0_12px_32px_rgba(255,215,0,0.3)] transition-all duration-500 hover:scale-[1.03] hover:-translate-y-1 group w-full max-w-sm sm:col-span-2 lg:col-span-1 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/30 before:via-transparent before:to-cross-gold/10 before:rounded-[2.5rem] after:absolute after:top-4 after:left-1/2 after:w-4 after:h-2 after:bg-white/40 after:rounded-full after:blur-sm after:-translate-x-1/2">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-cross-gold/80 via-cross-sky to-white/40 flex items-center justify-center shadow-[0_8px_20px_rgba(255,215,0,0.4)] group-hover:shadow-[0_12px_28px_rgba(255,215,0,0.6)] transition-all duration-300 mx-auto relative before:absolute before:inset-1 before:bg-gradient-to-br before:from-white/40 before:to-transparent before:rounded-full">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white flex-shrink-0 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
-            <h3 className="font-semibold text-cross-cross mb-2 text-base sm:text-lg">Community</h3>
-            <p className="text-cross-cross/70 text-xs sm:text-sm leading-relaxed">Uniting believers in a shared mission of faith and fellowship</p>
+            <h3 className="font-semibold text-cross-cross mb-2 text-base sm:text-lg relative z-10">Community</h3>
+            <p className="text-cross-cross/70 text-xs sm:text-sm leading-relaxed relative z-10">Uniting believers in a shared mission of faith and fellowship</p>
           </div>
         </motion.div>
 
