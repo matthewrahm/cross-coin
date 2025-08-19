@@ -57,8 +57,8 @@ export default function CommunityPage() {
         </div>
 
         <div className="mt-12 flex flex-wrap gap-5 justify-center">
-          <SocialButton href="https://x.com/placeholder" label="X" className="bg-gradient-to-r from-cross-gold to-cross-sky text-white shadow-cross" />
-          <SocialButton href="https://x.com/i/communities/placeholder" label="X Community" className="bg-gradient-to-r from-cross-sky to-cross-heavenly text-cross-cross shadow-heavenly" />
+          <SocialButton href="https://x.com/placeholder" label="X" className="bg-gradient-to-r from-cross-gold to-white text-black shadow-cross" />
+          <SocialButton href="https://x.com/i/communities/placeholder" label="X Community" className="bg-gradient-to-r from-white to-cross-gold text-black shadow-heavenly" />
         </div>
       </section>
 
